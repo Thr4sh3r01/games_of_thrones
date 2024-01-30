@@ -15,9 +15,20 @@ export const GamesContextProvider = ({ children }) => {
     };
     getCharacters();
   }, []);
+    useEffect(() => {
+    const getHouses = async () => {
+        const housesApi = await fetch(`${baseUrl}houses`);
+        const housesJson = await housesApi.json();
+        setHouses(housesJson);
+    };
+    getHouses();
+  },[]) 
+
   return (
-    <GamesContext.Provider value={{ characters }}>
+    <GamesContext.Provider value={{ characters, houses }}>
       {children}
     </GamesContext.Provider>
   );
 };
+  
+

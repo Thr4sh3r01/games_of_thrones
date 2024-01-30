@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GamesContext } from "../../Contexto/Contexto";
 
 const Casas = () => {
-  return <div></div>;
+  const {houses} = useContext(GamesContext);
+  console.log(houses);
+  return <div><p>Correcto</p></div>;
 };
 
 export default Casas;
