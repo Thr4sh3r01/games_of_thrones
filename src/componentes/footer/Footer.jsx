@@ -1,18 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <span className="enlaces">
         <Link className="casas Text-Style-2" to="/casas">
-          Casas
+          {t("casas")}
         </Link>
         <Link className="personajes Text-Style-2" to="/personajes">
-          Personajes
+          {t("personajes")}
         </Link>
         <Link className="Cronologia Text-Style-2" to="/cronologia">
-          Cronologia
+          {t("cronologia")}
         </Link>
       </span>
     </div>

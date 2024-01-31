@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const Header2 = () => {
+const Header3 = () => {
   const { t, i18n } = useTranslation();
 
   const cambioLenguaEn = () => {
@@ -13,7 +13,7 @@ const Header2 = () => {
   };
   return (
     <div>
-      <Link to="/personajes">{t("volver")}</Link>
+      <Link to="/casas">{t("volver")}</Link>
       <img
         onClick={cambioLenguaEs}
         src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/842be3f9-cd11-4614-9bc1-1cb828173304.svg"
@@ -28,4 +28,4 @@ const Header2 = () => {
   );
 };
 
-export default Header2;
+export default Header3;

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header2 from "../header/Header2";
+import { useTranslation } from "react-i18next";
 
 const DetallePersonaje = () => {
+  const { t } = useTranslation();
   const [character, setCharacter] = useState([]);
   const { id } = useParams();
   useEffect(() => {
@@ -25,25 +27,25 @@ const DetallePersonaje = () => {
         <div>
           <ul>
             <li>
-              <h2>Casa</h2>
+              <h2>{t("casas")}</h2>
             </li>
             <li>
-              <h2>Alianzas</h2>
+              <h2>{t("Alianzas")}</h2>
               <p>{character.alliances}</p>
             </li>
             <li>
-              <h2>Apariciones</h2>
+              <h2>{t("Apariciones")}</h2>
               <p>{character.episodes}</p>
             </li>
             <li>
-              <h2>Padre</h2>
+              <h2>{t("Padre")}</h2>
               <p>{character.parents}</p>
             </li>
             <li>
-              <h2>Descendientes</h2>
+              <h2>{t("Descendientes")}</h2>
             </li>
             <li>
-              <h2>Titulos</h2>
+              <h2>{t("Titulos")}</h2>
               <p>{character.titles}</p>
             </li>
           </ul>
