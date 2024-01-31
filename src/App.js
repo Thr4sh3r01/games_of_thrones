@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import { GamesContextProvider } from "./Contexto/Contexto";
+import Home from "./componentes/Home/Home";
+import Personajes from "./componentes/Personajes/Personajes";
+import Casas from "./componentes/Casas/Casas.jsx";
+import Cronologia from "./componentes/Cronologia/Cronologia.jsx";
+import DetallePersonaje from "./componentes/DetallePersonaje/DetallePersonaje.jsx";
+import DetalleCasas from "./componentes/DetallesCasas/DetalleCasas.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GamesContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/personajes" element={<Personajes />} />
+            <Route path="/casas" element={<Casas />} />
+            <Route path="/cronologia" element={<Cronologia />} />
+            <Route path="/personajes/:id" element={<DetallePersonaje />} />
+            <Route path="/casas/:id" element={<DetalleCasas />} />
+          </Routes>
+        </BrowserRouter>
+      </GamesContextProvider>
     </div>
   );
 }

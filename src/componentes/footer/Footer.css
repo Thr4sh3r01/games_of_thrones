@@ -1,0 +1,39 @@
+.casas {
+    width: 330px;
+    height: 44px;
+    margin: 0 321px 0 342px;
+    font-family: GameofThrones;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  .Cronologia {
+    width: 330px;
+    height: 44px;
+    margin: 0 0 0 321px;
+    font-family: GameofThrones;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+  .personajes {
+    width: 330px;
+    height: 44px;
+    margin: 0 342px 0 0;
+    font-family: GameofThrones;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
