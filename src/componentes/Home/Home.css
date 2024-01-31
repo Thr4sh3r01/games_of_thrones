@@ -1,0 +1,28 @@
+.home{
+    background-image: url("https://letraslibres.com/wp-content/uploads/2016/05/game-of-thrones-poster_85627-1920x1200.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+
+  
+}
+
+.Games-of-Thrones {
+    width: 1367px;
+    height: 390px;
+    margin: 246px 165px 249px;
+    font-family: GameofThrones;
+    font-size: 176px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+ 

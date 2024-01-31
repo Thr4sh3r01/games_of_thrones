@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 
 export const GamesContext = createContext();
@@ -15,14 +16,14 @@ export const GamesContextProvider = ({ children }) => {
     };
     getCharacters();
   }, []);
-    useEffect(() => {
+  useEffect(() => {
     const getHouses = async () => {
-        const housesApi = await fetch(`${baseUrl}houses`);
-        const housesJson = await housesApi.json();
-        setHouses(housesJson);
+      const housesApi = await fetch(`${baseUrl}houses`);
+      const housesJson = await housesApi.json();
+      setHouses(housesJson);
     };
     getHouses();
-  },[]) 
+  }, []);
 
   return (
     <GamesContext.Provider value={{ characters, houses }}>
@@ -30,5 +31,3 @@ export const GamesContextProvider = ({ children }) => {
     </GamesContext.Provider>
   );
 };
-  
-
