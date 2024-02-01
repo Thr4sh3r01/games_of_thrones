@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="Base">
       <span className="enlaces">
         <Link className="casas Text-Style-2" to="/casas">
           Casas

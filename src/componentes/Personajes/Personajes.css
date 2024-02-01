@@ -16,19 +16,20 @@
     overflow-y: auto;
 }
 
-.Character {
+.Personajes {
     width: 16%;
     height: 320px;
     margin-bottom: 68px;
 }
 
-.soy_todo {
+
+.Base {
     background-color: black;
     color: white;
 
 }
 
-.chName {
+.perName {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -69,7 +70,7 @@
         background-size: 105%;
 
 
-        .chName {
+        .perName {
             transform: translateY(0%);
             background: rgba(2, 2, 2, 0.6);
             color: #f1f4f5;

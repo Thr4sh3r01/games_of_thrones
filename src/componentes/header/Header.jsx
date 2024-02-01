@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Header.css';
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <input></input>
       <Link to="/">
         <button>HOME</button>
-        <img />
+        <img alt="cazita"/>
       </Link>
       <img
         src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/842be3f9-cd11-4614-9bc1-1cb828173304.svg"

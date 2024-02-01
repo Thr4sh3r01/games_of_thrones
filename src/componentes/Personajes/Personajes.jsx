@@ -11,18 +11,21 @@ const Personajes = () => {
   const { characters } = useContext(GamesContext);
   console.log(characters);
   return (
-    <div>
+    <div className="Base">
       <Header></Header>
-      {characters.map((character, index) => (
-        <SimpleBar>  
-          <div className="contenedorPersonajes" key={index}>
-            <img className="imagen" src={character.image} alt={character.name} />
+    <SimpleBar> 
+      <div className="gallery">
+        {characters.map((character, index) => (
+
+          <div className="card" key={index}>
+            <img className="characterImage" src={character.image} alt={character.name} />
               <Link to={`/personajes/${character.id}`}>
-                <h2>{character.name}</h2>
+                <h1 className="perName">{character.name}</h1>
               </Link>
           </div>
-        </SimpleBar>
-      ))}
+        ))}
+      </div>
+    </SimpleBar>  
       <Footer></Footer>
     </div>
   );
