@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Footer.css';
+import "./Footer.css";
 import { useTranslation } from "react-i18next";
-
 
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="Base">
+    <div className="base">
       <span className="enlaces">
-        <Link className="casas Text-Style-2" to="/casas">
+        <Link className="textCasa" to="/casas">
           {t("casas")}
         </Link>
-        <Link className="personajes Text-Style-2" to="/personajes">
+        <Link className="personajes" to="/personajes">
           {t("personajes")}
         </Link>
-        <Link className="Cronologia Text-Style-2" to="/cronologia">
+        <Link className="cronologia" to="/cronologia">
           {t("cronologia")}
         </Link>
       </span>

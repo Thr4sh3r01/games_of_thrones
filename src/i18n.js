@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
         Alianzas: "Alliances",
         Religiones: "Religions",
         Fundacion: "Foundation",
-        Apariciones: "",
+        Apariciones: "Appearances",
         Padre: "Parents",
         Descendientes: "Descendant",
         Titulos: "Titles",

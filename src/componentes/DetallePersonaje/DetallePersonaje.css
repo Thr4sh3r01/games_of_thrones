@@ -1,0 +1,55 @@
+.detapersonajes{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.textoCompleto{
+    display: flex;
+    align-items: center;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.foto{
+    width: 40%;
+}
+.texto2{
+    text-align: center;
+    width: 121%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    margin-left: -13%;
+
+
+}
+.columna2{
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+
+}
+.escudo{
+    width: 10vw;
+}

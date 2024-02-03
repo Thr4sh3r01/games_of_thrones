@@ -1,0 +1,24 @@
+.encabezado2{
+    margin-left: 87%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    img{
+        margin-right: 5%; 
+    }
+}
+.volver{
+    margin-top: 3%;
+    margin-right: 4%;
+}
+.return{
+    top: 3%;
+    left: 5%;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+
+}
