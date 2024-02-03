@@ -1,0 +1,9 @@
+.encabezado{
+    margin-left: 87%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        margin-right: 5%; 
+    }
+}

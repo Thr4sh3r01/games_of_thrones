@@ -1,5 +1,14 @@
 
+.base {
+justify-content: center;
+width: 90%;
+
+}
+
 .enlaces {
+  color: white;
+  display: flex;
+  font-size: 20px;
   display:flex;
   justify-content: space-between;
   width: 100%;
@@ -7,20 +16,12 @@
   flex-direction: row;
   align-items: center;
 }
-/*
-.enlaces {
-  color: white;
-  display: flex;
-  text-decoration: none;
-  font-size: 20px;
-}
-*/
 
 
-.casas {
-    width: 330px;
-    height: 44px;
-    margin: 0 321px 0 342px;
+
+.textCasa {
+     width: 33%;
+    /* margin: 0 321px 0 342px; */
     font-family: GameofThrones;
     font-size: 36px;
     font-weight: normal;
@@ -30,10 +31,9 @@
     letter-spacing: normal;
     color: white;
   }
-  .Cronologia {
-    width: 330px;
-    height: 44px;
-    margin: 0 0 0 321px;
+  .cronologia {
+    width: 33%;
+    /* margin: 0 0 0 321px; */
     font-family: GameofThrones;
     font-size: 36px;
     font-weight: normal;
@@ -44,9 +44,8 @@
     color: white;
   }
   .personajes {
-    width: 330px;
-    height: 44px;
-    margin: 0 342px 0 0;
+    width: 33%;
+    /* margin: 0 342px 0 0; */
     font-family: GameofThrones;
     font-size: 36px;
     font-weight: normal;

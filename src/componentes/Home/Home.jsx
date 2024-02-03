@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <Header></Header>
-      <span className="Games-of-Thrones Text-Style-4">Games of thrones</span>
+      <span className="gamesOfThrones">Games of thrones</span>
       <Footer></Footer>
     </div>
   );

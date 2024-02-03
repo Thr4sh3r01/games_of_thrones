@@ -78,3 +78,11 @@
         }
     }
 }
+.volver{
+    /* position: absolute;
+    margin-top: -5;
+    right: 12%; */
+    position: absolute;
+    left: 84%;
+    top: 3%;
+}

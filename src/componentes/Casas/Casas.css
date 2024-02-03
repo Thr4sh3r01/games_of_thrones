@@ -1,6 +1,32 @@
 .casas {
     background-color: #000;
-    height: 1080px;
-    padding: 19px 85px 60px 111px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+ 
   }
+  .buscador{
+    position: absolute;
+    left: 3%;
+    top: 4%;
+    background-color: black;
+    border: none;
+
+  }
+  .escudos{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+  }
+.imagen {
+  width: 100%;
+
+}
+    
